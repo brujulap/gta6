@@ -77,6 +77,17 @@
       </section>
     </div>
 
+    <section class="panel map-panel" aria-labelledby="mapa-titulo">
+      <div class="map-copy">
+        <h2 id="mapa-titulo">Mapa de Leonida</h2>
+        <p>Vice City al este, los condados del interior y los cayos al sur. Pulsa el mapa para verlo a pantalla completa.</p>
+      </div>
+      <a class="map-open" id="mapa-abrir" href="img/mapa-leonida-2800.webp" aria-haspopup="dialog" aria-controls="mapa-visor" aria-expanded="false">
+        <img src="img/mapa-leonida-1200.webp" alt="Mapa del estado de Leonida en GTA VI: Vice City y Vice Beach al este, los condados del interior y los cayos al sur, sobre el océano turquesa." width="1200" height="1642" loading="lazy" decoding="async" fetchpriority="low">
+        <span class="map-hint">Ver en grande</span>
+      </a>
+    </section>
+
     <form class="toolbar" id="buscar" role="search">
       <div class="search">
         <label for="q">Buscar</label>
@@ -108,6 +119,21 @@
   <noscript>
     <p class="wrap noscript">Esta página necesita JavaScript para mostrar los trucos.</p>
   </noscript>
+
+  <dialog class="map-dialog" id="mapa-visor" aria-labelledby="mapa-visor-titulo" closedby="any">
+    <div class="map-dialog-bar">
+      <h2 id="mapa-visor-titulo">Mapa de Leonida</h2>
+      <div class="map-dialog-actions">
+        <button type="button" class="map-zoom" id="mapa-zoom" aria-pressed="false">Ampliar</button>
+        <button type="button" class="map-close" id="mapa-cerrar">Cerrar</button>
+      </div>
+    </div>
+    <div class="map-stage" id="mapa-stage">
+      <p class="map-status" id="mapa-estado">Cargando el mapa…</p>
+      <img id="mapa-full" alt="Mapa ampliado del estado de Leonida, con las carreteras, los condados y la costa." width="2800" height="3830" decoding="async" data-src="img/mapa-leonida-2800.webp">
+    </div>
+  </dialog>
+
   <script src="app.js" defer></script>
 </body>
 </html>
