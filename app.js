@@ -253,6 +253,115 @@
     });
   }
 
+  function initMap() {
+    var opener = document.getElementById("mapa-abrir");
+    var dialog = document.getElementById("mapa-visor");
+    var fullImg = document.getElementById("mapa-full");
+    var statusEl = document.getElementById("mapa-estado");
+    var closeBtn = document.getElementById("mapa-cerrar");
+    var zoomBtn = document.getElementById("mapa-zoom");
+    if (!opener || !dialog || !fullImg || typeof dialog.showModal !== "function") return;
+
+    function showStatus(text) {
+      if (!statusEl) return;
+      statusEl.hidden = false;
+      statusEl.textContent = text;
+    }
+
+    function hideStatus() {
+      if (statusEl) statusEl.hidden = true;
+    }
+
+    fullImg.addEventListener("load", function () {
+      if (fullImg.naturalWidth > 0) hideStatus();
+    });
+
+    fullImg.addEventListener("error", function () {
+      showStatus("No se pudo cargar el mapa ampliado.");
+    });
+
+    function ensureFullMap() {
+      if (!fullImg.getAttribute("src")) {
+        showStatus("Cargando el mapa…");
+        fullImg.src = fullImg.getAttribute("data-src");
+      }
+      if (fullImg.complete && fullImg.naturalWidth > 0) hideStatus();
+    }
+
+    var stage = document.getElementById("mapa-stage");
+
+    function setPan(on) {
+      if (!stage) return;
+      if (on) {
+        stage.tabIndex = 0;
+        stage.setAttribute("aria-label", "Mapa ampliado. Usa las flechas para moverte.");
+        stage.scrollLeft = Math.max(0, (stage.scrollWidth - stage.clientWidth) / 2);
+        stage.scrollTop = Math.max(0, (stage.scrollHeight - stage.clientHeight) / 2);
+      } else {
+        stage.removeAttribute("tabindex");
+        stage.removeAttribute("aria-label");
+        stage.scrollLeft = 0;
+        stage.scrollTop = 0;
+      }
+    }
+
+    function resetZoom() {
+      dialog.classList.remove("is-zoomed");
+      setPan(false);
+      if (!zoomBtn) return;
+      zoomBtn.setAttribute("aria-pressed", "false");
+      zoomBtn.textContent = "Ampliar";
+    }
+
+    opener.addEventListener("click", function (ev) {
+      ev.preventDefault();
+      ensureFullMap();
+      try {
+        if (!dialog.open) dialog.showModal();
+        opener.setAttribute("aria-expanded", "true");
+      } catch (err) {
+        window.location.href = opener.getAttribute("href");
+      }
+    });
+
+    if (closeBtn) {
+      closeBtn.addEventListener("click", function () { dialog.close(); });
+    }
+
+    if (stage) {
+      stage.addEventListener("keydown", function (ev) {
+        if (!dialog.classList.contains("is-zoomed")) return;
+        var x = 0;
+        var y = 0;
+        if (ev.key === "ArrowRight") x = 80;
+        else if (ev.key === "ArrowLeft") x = -80;
+        else if (ev.key === "ArrowDown") y = 80;
+        else if (ev.key === "ArrowUp") y = -80;
+        else return;
+        stage.scrollBy(x, y);
+        ev.preventDefault();
+      });
+    }
+
+    if (zoomBtn) {
+      zoomBtn.addEventListener("click", function () {
+        var on = dialog.classList.toggle("is-zoomed");
+        zoomBtn.setAttribute("aria-pressed", on ? "true" : "false");
+        zoomBtn.textContent = on ? "Ajustar" : "Ampliar";
+        setPan(on);
+      });
+    }
+
+    dialog.addEventListener("close", function () {
+      opener.setAttribute("aria-expanded", "false");
+      resetZoom();
+    });
+
+    dialog.addEventListener("click", function (ev) {
+      if (ev.target === dialog) dialog.close();
+    });
+  }
+
   async function init() {
     bind();
     try {
@@ -271,5 +380,6 @@
     }
   }
 
+  initMap();
   init();
 })();

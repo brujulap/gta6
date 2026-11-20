@@ -14,6 +14,7 @@
   --armas: #e08a62;
   --vehiculos: #7eb8c9;
   --mundo: #8fbf7a;
+  --teal: #3cb8c9;
   --shadow: 0 2px 0 #0c100b;
 }
 
@@ -461,7 +462,7 @@ footer p { margin: 0.15rem 0; }
   color: var(--danger);
 }
 
-button, .chip, .copy, .fav, .cheat, .segment button {
+button, .chip, .copy, .fav, .cheat, .segment button, .map-open, .map-zoom, .map-close {
   transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
 
@@ -505,3 +506,211 @@ button, .chip, .copy, .fav, .cheat, .segment button {
 }
 
 ::selection { background: var(--brass); color: var(--brass-ink); }
+
+.map-panel {
+  margin-top: 0.9rem;
+  border-left: 4px solid var(--teal);
+  display: grid;
+  gap: 0.95rem;
+  align-items: center;
+}
+
+.map-copy p {
+  max-width: 38rem;
+  margin: 0;
+  color: var(--muted);
+}
+
+.map-open {
+  display: block;
+  position: relative;
+  width: min(100%, 22rem);
+  justify-self: start;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.map-open img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--card-line);
+  background: #12343a;
+}
+
+.map-hint {
+  position: absolute;
+  left: 0.55rem;
+  bottom: 0.55rem;
+  max-width: calc(100% - 1.1rem);
+  padding: 0.28rem 0.62rem;
+  border-radius: 999px;
+  border: 1px solid #7fd4e0;
+  background: rgba(12, 16, 11, 0.9);
+  color: #e7f7f8;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.map-open:hover .map-hint,
+.map-open:focus-visible .map-hint {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #082226;
+}
+
+.map-dialog {
+  padding: 0;
+  border: 0;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.map-dialog:modal {
+  position: fixed;
+  inset: 0;
+  width: auto;
+  height: auto;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(ellipse 70% 42% at 50% -10%, rgba(60, 184, 201, 0.18), transparent 58%),
+    var(--bg);
+}
+
+.map-dialog::backdrop {
+  background: rgba(8, 10, 8, 0.72);
+}
+
+.map-dialog-bar,
+.map-stage {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.map-dialog-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem 1rem;
+  padding: 0.7rem 0.85rem;
+  border-bottom: 1px solid var(--card-line);
+  background: rgba(16, 20, 15, 0.96);
+}
+
+.map-dialog-bar h2 {
+  margin: 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+
+.map-dialog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-left: auto;
+}
+
+.map-zoom,
+.map-close {
+  appearance: none;
+  min-height: 2.75rem;
+  padding: 0 0.95rem;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.map-zoom {
+  border: 1px solid #3d4d39;
+  background: transparent;
+  color: var(--ink);
+}
+
+.map-zoom:hover,
+.map-zoom[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #141a12;
+}
+
+.map-close {
+  border: 1px solid var(--brass);
+  background: var(--brass);
+  color: var(--brass-ink);
+}
+
+.map-close:hover { background: #f0c56e; }
+
+.map-stage {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+.map-stage:focus-visible {
+  outline-offset: -4px;
+}
+
+.map-status {
+  position: absolute;
+  left: 0.75rem;
+  right: 0.75rem;
+  top: 1.25rem;
+  margin: 0;
+  text-align: center;
+  color: var(--muted);
+  pointer-events: none;
+}
+
+.map-stage img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: calc(100% - 1.5rem);
+  max-height: calc(100% - 1.5rem);
+  margin: auto;
+  border-radius: 12px;
+  background: #12343a;
+}
+
+.map-dialog.is-zoomed .map-stage img {
+  position: static;
+  inset: auto;
+  width: 2800px;
+  max-width: none;
+  max-height: none;
+  height: auto;
+  margin: 0;
+  border-radius: 0;
+}
+
+html:has(.map-dialog[open]) {
+  overflow: hidden;
+}
+
+@media (min-width: 860px) {
+  .map-panel {
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 1.15rem 1.5rem;
+  }
+
+  .map-open { width: 100%; justify-self: end; }
+}
