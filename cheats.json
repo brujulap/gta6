@@ -1,0 +1,846 @@
+[
+  {
+    "name": "$250,000",
+    "kind": "Jugador",
+    "what": "Suma 250.000 dólares en efectivo a tu personaje.",
+    "ps5": [
+      "Up",
+      "Right",
+      "Down",
+      "Left",
+      "Up",
+      "Left",
+      "Down",
+      "Right"
+    ],
+    "xbox": [
+      "Up",
+      "Right",
+      "Down",
+      "Left",
+      "Up",
+      "Left",
+      "Down",
+      "Right"
+    ],
+    "unlock": null
+  },
+  {
+    "name": "Body Armor",
+    "kind": "Jugador",
+    "what": "Coloca un chaleco antibalas en tu equipo.",
+    "ps5": [
+      "Down",
+      "Up",
+      "Left",
+      "Up",
+      "Up",
+      "Up",
+      "Up",
+      "Up",
+      "Down",
+      "Down"
+    ],
+    "xbox": [
+      "Down",
+      "Up",
+      "Left",
+      "Up",
+      "Up",
+      "Up",
+      "Up",
+      "Up",
+      "Down",
+      "Down"
+    ],
+    "unlock": "Completa 100 sesiones de entrenamiento."
+  },
+  {
+    "name": "Raise Heat Level",
+    "kind": "Jugador",
+    "what": "Intensifica la presión de la policía sobre ti en todo el mapa.",
+    "ps5": [
+      "Left",
+      "Down",
+      "Right",
+      "Down",
+      "Up",
+      "Down",
+      "Up"
+    ],
+    "xbox": [
+      "Left",
+      "Down",
+      "Right",
+      "Down",
+      "Up",
+      "Down",
+      "Up"
+    ],
+    "unlock": "Escapa de un nivel de búsqueda de tres estrellas en 25 ocasiones."
+  },
+  {
+    "name": "Raise Wanted Level",
+    "kind": "Jugador",
+    "what": "Suma estrellas a tu nivel de búsqueda.",
+    "ps5": [
+      "Left",
+      "Down",
+      "Right",
+      "Down",
+      "Up",
+      "Right",
+      "Up"
+    ],
+    "xbox": [
+      "Left",
+      "Down",
+      "Right",
+      "Down",
+      "Up",
+      "Right",
+      "Up"
+    ],
+    "unlock": "Escapa de un nivel de búsqueda de tres estrellas en 50 ocasiones."
+  },
+  {
+    "name": "Unlimited Focus",
+    "kind": "Jugador",
+    "what": "El medidor de Focus deja de agotarse.",
+    "ps5": [
+      "Down",
+      "Up",
+      "Up",
+      "Down",
+      "Up",
+      "Down",
+      "Up",
+      "Down",
+      "Up",
+      "Right"
+    ],
+    "xbox": [
+      "Down",
+      "Up",
+      "Up",
+      "Down",
+      "Up",
+      "Down",
+      "Up",
+      "Down",
+      "Up",
+      "Right"
+    ],
+    "unlock": null
+  },
+  {
+    "name": "Drunk",
+    "kind": "Jugador",
+    "what": "Tú y tu pareja quedan ebrios al instante.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Gasta 2.500 dólares en alcohol."
+  },
+  {
+    "name": "No Fall Damage",
+    "kind": "Jugador",
+    "what": "Las caídas dejan de hacerte daño.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Sobrevive 20 veces a una caída libre de 40 pies (unos 12 metros)."
+  },
+  {
+    "name": "Parachute",
+    "kind": "Jugador",
+    "what": "Añade un paracaídas a tu equipo.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa 50 saltos en paracaídas o saltos BASE desde 300 pies (unos 90 metros) o más."
+  },
+  {
+    "name": "Attack Force",
+    "kind": "Armas",
+    "what": "Los disparos y los golpes cuerpo a cuerpo lanzan a quien alcanzan.",
+    "ps5": [
+      "Down",
+      "Up",
+      "Left",
+      "Left",
+      "Right",
+      "Down",
+      "Down",
+      "Up",
+      "Down"
+    ],
+    "xbox": [
+      "Down",
+      "Up",
+      "Left",
+      "Left",
+      "Right",
+      "Down",
+      "Down",
+      "Up",
+      "Down"
+    ],
+    "unlock": null
+  },
+  {
+    "name": "Exploding Balls",
+    "kind": "Armas",
+    "what": "Las pelotas de deporte estallan al chocar contra algo.",
+    "ps5": [
+      "Down",
+      "Up",
+      "Left",
+      "Left",
+      "Right",
+      "Down",
+      "Down",
+      "Up",
+      "Right"
+    ],
+    "xbox": [
+      "Down",
+      "Up",
+      "Left",
+      "Left",
+      "Right",
+      "Down",
+      "Down",
+      "Up",
+      "Right"
+    ],
+    "unlock": "Alcanza a 20 enemigos con daño explosivo."
+  },
+  {
+    "name": "Infinite Ammo",
+    "kind": "Armas",
+    "what": "La munición de tus armas no se acaba.",
+    "ps5": [
+      "Down",
+      "Up",
+      "Right",
+      "Down",
+      "Left",
+      "Left",
+      "Up",
+      "Down",
+      "Down",
+      "Down"
+    ],
+    "xbox": [
+      "Down",
+      "Up",
+      "Right",
+      "Down",
+      "Left",
+      "Left",
+      "Up",
+      "Down",
+      "Down",
+      "Down"
+    ],
+    "unlock": "Consigue 25 medallas de plata o mejores en los campos de tiro."
+  },
+  {
+    "name": "Max Ammo",
+    "kind": "Armas",
+    "what": "Rellena al máximo la munición de todas tus armas.",
+    "ps5": [
+      "Down",
+      "Up",
+      "Right",
+      "Down",
+      "Left",
+      "Left",
+      "Up",
+      "Up",
+      "Down",
+      "Left"
+    ],
+    "xbox": [
+      "Down",
+      "Up",
+      "Right",
+      "Down",
+      "Left",
+      "Left",
+      "Up",
+      "Up",
+      "Down",
+      "Left"
+    ],
+    "unlock": "Consigue 25 medallas de bronce o mejores en los campos de tiro."
+  },
+  {
+    "name": "No Reload",
+    "kind": "Armas",
+    "what": "Sigues disparando sin tener que recargar.",
+    "ps5": [
+      "Down",
+      "Up",
+      "Right",
+      "Down",
+      "Left",
+      "Left",
+      "Up",
+      "Down",
+      "Down",
+      "Up"
+    ],
+    "xbox": [
+      "Down",
+      "Up",
+      "Right",
+      "Down",
+      "Left",
+      "Left",
+      "Up",
+      "Down",
+      "Down",
+      "Up"
+    ],
+    "unlock": "Consigue 25 medallas de oro en los campos de tiro."
+  },
+  {
+    "name": "All Explosive Weapons",
+    "kind": "Armas",
+    "what": "Recibes todas las armas explosivas, con la munición al completo.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Lanza 100 granadas."
+  },
+  {
+    "name": "Exploding Bottles",
+    "kind": "Armas",
+    "what": "Las botellas estallan cuando reciben daño.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Lanza 100 cócteles molotov."
+  },
+  {
+    "name": "Explosive Shotgun",
+    "kind": "Armas",
+    "what": "Te da una Mason & Keen Shortstraw que dispara cartuchos explosivos.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Alcanza a 100 enemigos con daño explosivo."
+  },
+  {
+    "name": "Hauners H-AT",
+    "kind": "Armas",
+    "what": "Incorpora un Hauners H-AT a tu equipo.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Haz estallar 100 vehículos."
+  },
+  {
+    "name": "Incendiary Ammo",
+    "kind": "Armas",
+    "what": "Cada disparo prende fuego a lo que toca.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Quema a 100 enemigos."
+  },
+  {
+    "name": "Spawn HVY Bulldozer",
+    "kind": "Vehículos",
+    "what": "Aparece un HVY Bulldozer.",
+    "ps5": [
+      "Left",
+      "Up",
+      "Right",
+      "Down",
+      "Left",
+      "Right",
+      "Right",
+      "Down"
+    ],
+    "xbox": [
+      "Left",
+      "Up",
+      "Right",
+      "Down",
+      "Left",
+      "Right",
+      "Right",
+      "Down"
+    ],
+    "unlock": "Descubre el HVY Bulldozer. Después queda registrado en el menú de progreso."
+  },
+  {
+    "name": "Spawn MTL Pumper",
+    "kind": "Vehículos",
+    "what": "Aparece un camión de bomberos MTL Pumper.",
+    "ps5": [
+      "Left",
+      "Up",
+      "Right",
+      "Down",
+      "Left",
+      "Right",
+      "Right",
+      "Up"
+    ],
+    "xbox": [
+      "Left",
+      "Up",
+      "Right",
+      "Down",
+      "Left",
+      "Right",
+      "Right",
+      "Up"
+    ],
+    "unlock": "Todavía no se sabe con certeza: las guías no se ponen de acuerdo en el requisito."
+  },
+  {
+    "name": "Spawn Maibatsu Boomazoom",
+    "kind": "Vehículos",
+    "what": "Aparece un scooter Maibatsu Boomazoom.",
+    "ps5": [
+      "Left",
+      "Up",
+      "Right",
+      "Down",
+      "Left",
+      "Left",
+      "Up",
+      "Left"
+    ],
+    "xbox": [
+      "Left",
+      "Up",
+      "Right",
+      "Down",
+      "Left",
+      "Left",
+      "Up",
+      "Left"
+    ],
+    "unlock": "Completa 5 desafíos de compras."
+  },
+  {
+    "name": "Vehicle Force",
+    "kind": "Vehículos",
+    "what": "Quien atropelles sale despedido por los aires.",
+    "ps5": [
+      "Down",
+      "Up",
+      "Left",
+      "Left",
+      "Right",
+      "Down",
+      "Left",
+      "Up",
+      "Down"
+    ],
+    "xbox": [
+      "Down",
+      "Up",
+      "Left",
+      "Left",
+      "Right",
+      "Down",
+      "Left",
+      "Up",
+      "Down"
+    ],
+    "unlock": "Elimina a 25 enemigos con un vehículo."
+  },
+  {
+    "name": "Repair Vehicle",
+    "kind": "Vehículos",
+    "what": "Deja como nuevo el vehículo en el que vas.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Gana 10 carreras en Gellhorn Raceway, Thrillbilly Mud Club y Boone Speedway."
+  },
+  {
+    "name": "Spawn '65 Vapid Dominator",
+    "kind": "Vehículos",
+    "what": "Aparece un '65 Vapid Dominator.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa todos los desafíos de forma física."
+  },
+  {
+    "name": "Spawn Airboat 09",
+    "kind": "Vehículos",
+    "what": "Aparece un Airboat 09.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa 5 desafíos de supervivencia."
+  },
+  {
+    "name": "Spawn Bravado Banshee",
+    "kind": "Vehículos",
+    "what": "Aparece un Bravado Banshee.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa todos los desafíos de combate."
+  },
+  {
+    "name": "Spawn Brimstone Golfer",
+    "kind": "Vehículos",
+    "what": "Aparece un Brimstone Golfer.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa todos los desafíos de deporte."
+  },
+  {
+    "name": "Spawn Hauners P-996 Lazer",
+    "kind": "Vehículos",
+    "what": "Aparece un caza Hauners P-996 Lazer.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa todos los desafíos."
+  },
+  {
+    "name": "Spawn Hauners Rhino Tank",
+    "kind": "Vehículos",
+    "what": "Aparece un tanque Hauners Rhino.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa todos los desafíos de supervivencia."
+  },
+  {
+    "name": "Spawn Inflatable Flamingo",
+    "kind": "Vehículos",
+    "what": "Aparece un flamenco inflable.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Destruye 50 flamencos de cocaína."
+  },
+  {
+    "name": "Spawn Interstate Ambulance",
+    "kind": "Vehículos",
+    "what": "Aparece una ambulancia Interstate.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Descubre la ambulancia Interstate en el menú de progreso."
+  },
+  {
+    "name": "Spawn Lapwing Mallard",
+    "kind": "Vehículos",
+    "what": "Aparece un Lapwing Mallard.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa 5 desafíos de vehículos."
+  },
+  {
+    "name": "Spawn Maibatsu Sanchez",
+    "kind": "Vehículos",
+    "what": "Aparece una moto Maibatsu Sanchez.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa 5 desafíos criminales."
+  },
+  {
+    "name": "Spawn Nagasaki Carbon RS",
+    "kind": "Vehículos",
+    "what": "Aparece una moto Nagasaki Carbon RS.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa todos los desafíos de exploración."
+  },
+  {
+    "name": "Spawn Nagasaki Sea Sparrow",
+    "kind": "Vehículos",
+    "what": "Aparece un Nagasaki Sea Sparrow.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa 5 desafíos de exploración."
+  },
+  {
+    "name": "Spawn Progen Emerus",
+    "kind": "Vehículos",
+    "what": "Aparece un Progen Emerus.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa todos los desafíos de vehículos."
+  },
+  {
+    "name": "Spawn Speeder 700 GT",
+    "kind": "Vehículos",
+    "what": "Aparece un Speeder 700 GT.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa 5 desafíos de combate."
+  },
+  {
+    "name": "Spawn Truffade Thrax",
+    "kind": "Vehículos",
+    "what": "Aparece un Truffade Thrax.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa todos los desafíos de compras."
+  },
+  {
+    "name": "Spawn Tuff BMX",
+    "kind": "Vehículos",
+    "what": "Aparece una Tuff BMX.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa 5 desafíos de forma física."
+  },
+  {
+    "name": "Spawn Vapid Stanier G2 Taxi",
+    "kind": "Vehículos",
+    "what": "Aparece un taxi Vapid Stanier G2.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa 5 desafíos de deporte."
+  },
+  {
+    "name": "Spawn Western Zombie Bobber",
+    "kind": "Vehículos",
+    "what": "Aparece una moto Western Zombie Bobber.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa todos los desafíos criminales."
+  },
+  {
+    "name": "Unlimited Nitrous",
+    "kind": "Vehículos",
+    "what": "A los vehículos no se les acaba ni el nitro ni el combustible.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa 50 saltos acrobáticos."
+  },
+  {
+    "name": "Cataclysm",
+    "kind": "Mundo",
+    "what": "Filtro de pantalla que llena el mundo de un humo denso y turbio.",
+    "ps5": [
+      "Down",
+      "Down",
+      "Up",
+      "Right",
+      "Right",
+      "Up",
+      "Left",
+      "Left",
+      "Right",
+      "Right"
+    ],
+    "xbox": [
+      "Down",
+      "Down",
+      "Up",
+      "Right",
+      "Right",
+      "Up",
+      "Left",
+      "Left",
+      "Right",
+      "Right"
+    ],
+    "unlock": "Descubre el Martha's Vamos. Después queda registrado en el menú de progreso."
+  },
+  {
+    "name": "Cycle Weather",
+    "kind": "Mundo",
+    "what": "Pasa al siguiente estado del clima.",
+    "ps5": [
+      "Down",
+      "Right",
+      "Up",
+      "Down",
+      "Right",
+      "Up",
+      "Right"
+    ],
+    "xbox": [
+      "Down",
+      "Right",
+      "Up",
+      "Down",
+      "Right",
+      "Up",
+      "Right"
+    ],
+    "unlock": null
+  },
+  {
+    "name": "Dollhouse",
+    "kind": "Mundo",
+    "what": "Filtro de pantalla con colores muy saturados y un encuadre estrecho.",
+    "ps5": [
+      "Down",
+      "Down",
+      "Up",
+      "Right",
+      "Right",
+      "Up",
+      "Left",
+      "Left",
+      "Down",
+      "Right"
+    ],
+    "xbox": [
+      "Down",
+      "Down",
+      "Up",
+      "Right",
+      "Right",
+      "Up",
+      "Left",
+      "Left",
+      "Down",
+      "Right"
+    ],
+    "unlock": "Pasa 8 horas con tu pareja."
+  },
+  {
+    "name": "Faded Glory",
+    "kind": "Mundo",
+    "what": "Filtro que recuerda a un televisor de tubo a color ya gastado.",
+    "ps5": [
+      "Down",
+      "Down",
+      "Up",
+      "Right",
+      "Right",
+      "Up",
+      "Left",
+      "Left",
+      "Left",
+      "Right"
+    ],
+    "xbox": [
+      "Down",
+      "Down",
+      "Up",
+      "Right",
+      "Right",
+      "Up",
+      "Left",
+      "Left",
+      "Left",
+      "Right"
+    ],
+    "unlock": "Atraca 50 tiendas con tu pareja."
+  },
+  {
+    "name": "Bubblegum",
+    "kind": "Mundo",
+    "what": "Pinta el mundo de violeta y amarillo, con brillos chispeantes.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Encuentra las 24 cartas coleccionables de flamencos de Vice City."
+  },
+  {
+    "name": "Dark Mirror",
+    "kind": "Mundo",
+    "what": "Voltea el mundo y lo deja en negro.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Gana 500.000 dólares vendiendo vehículos."
+  },
+  {
+    "name": "Fast Forward",
+    "kind": "Mundo",
+    "what": "Mete desenfoque de movimiento y acelera las nubes.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa 50 meditaciones."
+  },
+  {
+    "name": "Fisheye",
+    "kind": "Mundo",
+    "what": "Filtro de pantalla con efecto de ojo de pez.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Pesca 100 peces."
+  },
+  {
+    "name": "Golden Hour",
+    "kind": "Mundo",
+    "what": "Filtro dorado, en formato ancho.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Pasa 4 horas de la mano."
+  },
+  {
+    "name": "Hellscape",
+    "kind": "Mundo",
+    "what": "Tiñe el mundo de rojo y naranja, con calima de calor.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Roba 100 vehículos de la policía."
+  },
+  {
+    "name": "Migraine",
+    "kind": "Mundo",
+    "what": "Filtro de pantalla desenfocado y distorsionado.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Aguanta 6 minutos con seis estrellas de búsqueda."
+  },
+  {
+    "name": "Move Time Forward",
+    "kind": "Mundo",
+    "what": "Adelanta la hora del día.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Encuentra 10 relojes coleccionables."
+  },
+  {
+    "name": "Neon Jungle",
+    "kind": "Mundo",
+    "what": "Añade resaltes de neón por el mundo.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Descubre los 16 vehículos Girlypop."
+  },
+  {
+    "name": "Pause Time of Day",
+    "kind": "Mundo",
+    "what": "Congela la hora del día en el momento actual.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Encuentra 20 relojes coleccionables."
+  },
+  {
+    "name": "Pinhole",
+    "kind": "Mundo",
+    "what": "Filtro de pantalla al estilo de una cámara de agujero.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Resuelve 25 operaciones de bandas junto a tu pareja."
+  },
+  {
+    "name": "Pixel Art",
+    "kind": "Mundo",
+    "what": "Filtro que deja la imagen pixelada.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Gana 250.000 dólares vendiendo coleccionables."
+  },
+  {
+    "name": "Powdered Sugar",
+    "kind": "Mundo",
+    "what": "Deja el mundo blanco, salpicado de destellos.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Escanea todos los restos espaciales con WAiNK."
+  },
+  {
+    "name": "Videotape",
+    "kind": "Mundo",
+    "what": "Filtro de pantalla con pinta de cinta de vídeo.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Completa 50 actividades con tu pareja."
+  },
+  {
+    "name": "Yesteryear",
+    "kind": "Mundo",
+    "what": "Filtro en blanco y negro, como la tele de antes.",
+    "ps5": null,
+    "xbox": null,
+    "unlock": "Descubre el Ridgway."
+  }
+]

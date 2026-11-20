@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es" data-plat="ps5">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trucos de GTA VI</title>
+  <meta name="description" content="Lista en español de los trucos de GTA VI para PS5 y Xbox: cómo marcar cada código en el pad, el desafío que lo abre y cuáles siguen sin confirmar. Solo modo historia.">
+  <meta name="theme-color" content="#10140f">
+  <link rel="canonical" href="https://brujulap.github.io/gta6/">
+  <meta property="og:title" content="Trucos de GTA VI">
+  <meta property="og:description" content="Códigos de trucos de GTA VI para PS5 y Xbox, en español. Cómo introducirlos en el modo historia y qué desafío desbloquea cada uno.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:url" content="https://brujulap.github.io/gta6/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Trucos de GTA VI">
+  <meta name="twitter:description" content="Códigos de trucos de GTA VI para PS5 y Xbox, en español. Cómo introducirlos en el modo historia y qué desafío desbloquea cada uno.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    document.documentElement.dataset.plat = "ps5";
+    try {
+      var savedPlat = localStorage.getItem("gta6-plataforma");
+      if (savedPlat === "ps5" || savedPlat === "xbox") {
+        document.documentElement.dataset.plat = savedPlat;
+      }
+    } catch (err) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#lista">Saltar a la lista de trucos</a>
+  <header class="wrap hero">
+    <p class="eyebrow">Modo historia · PS5 y Xbox</p>
+    <h1>Trucos de GTA VI</h1>
+    <p class="lede">Códigos del pad para el modo historia, con el desafío que abre cada truco. Si el código todavía no es fiable, la ficha lo dice.</p>
+  </header>
+
+  <main class="wrap">
+    <div class="notes">
+      <section class="panel" aria-labelledby="antes-titulo">
+        <h2 id="antes-titulo">Antes de empezar</h2>
+        <ol class="steps">
+          <li>Los trucos aparecen al terminar la historia principal, en Menú de progreso → Trucos.</li>
+          <li>Cada truco tiene además su propio desafío de desbloqueo.</li>
+          <li>Solo funcionan en el modo historia. En el online no están.</li>
+          <li>Usar uno desactiva el guardado y los trofeos o logros hasta que salgas de la partida. Guarda antes.</li>
+        </ol>
+      </section>
+
+      <section class="panel" aria-labelledby="como-titulo">
+        <div class="panel-head">
+          <h2 id="como-titulo">Cómo usarlos</h2>
+          <div class="segment" role="radiogroup" aria-label="Consola">
+            <button type="button" role="radio" id="plat-ps5" aria-checked="true">PS5</button>
+            <button type="button" role="radio" id="plat-xbox" aria-checked="false">Xbox</button>
+          </div>
+        </div>
+        <script>
+          (function () {
+            var plat = document.documentElement.dataset.plat === "xbox" ? "xbox" : "ps5";
+            document.getElementById("plat-ps5").setAttribute("aria-checked", plat === "ps5" ? "true" : "false");
+            document.getElementById("plat-xbox").setAttribute("aria-checked", plat === "xbox" ? "true" : "false");
+          })();
+        </script>
+        <p class="howto" id="howto">
+          Pulsa
+          <span class="keycap" style="--rot: 0deg" title="Arriba" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false"><path d="M12 4.5 18.5 13H14.2v6.5h-4.4V13H5.5Z"/></svg>
+          </span>
+          <span class="sr-only">Arriba</span>
+          en el pad direccional para abrir el teléfono. Mantén
+          <span class="shoulder only-ps5">L1</span><span class="shoulder only-xbox">LB</span>,
+          pulsa
+          <span class="shoulder only-ps5">R1</span><span class="shoulder only-xbox">RB</span>
+          y marca después la secuencia del truco.
+        </p>
+      </section>
+    </div>
+
+    <form class="toolbar" id="buscar" role="search">
+      <div class="search">
+        <label for="q">Buscar</label>
+        <input id="q" type="search" placeholder="Nombre o descripción" autocomplete="off" aria-controls="lista">
+      </div>
+      <div class="chips" role="radiogroup" aria-label="Filtrar por tipo">
+        <button type="button" class="chip" role="radio" data-kind="Todos" aria-checked="true">Todos</button>
+        <button type="button" class="chip" role="radio" data-kind="Jugador" aria-checked="false">Jugador</button>
+        <button type="button" class="chip" role="radio" data-kind="Armas" aria-checked="false">Armas</button>
+        <button type="button" class="chip" role="radio" data-kind="Vehículos" aria-checked="false">Vehículos</button>
+        <button type="button" class="chip" role="radio" data-kind="Mundo" aria-checked="false">Mundo</button>
+      </div>
+    </form>
+
+    <p id="cuenta" class="cuenta" aria-live="polite">Cargando trucos…</p>
+    <p id="error" class="error" role="alert" hidden></p>
+    <h2 id="lista-titulo" class="sr-only">Lista de trucos</h2>
+    <div id="lista" class="list" role="region" aria-labelledby="lista-titulo" aria-busy="true"></div>
+    <p id="aviso" class="sr-only" role="status"></p>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Página no oficial hecha por fans. GTA VI es marca de Rockstar Games.</p>
+      <p>Datos recopilados de fuentes públicas.</p>
+    </div>
+  </footer>
+
+  <noscript>
+    <p class="wrap noscript">Esta página necesita JavaScript para mostrar los trucos.</p>
+  </noscript>
+  <script src="app.js" defer></script>
+</body>
+</html>
